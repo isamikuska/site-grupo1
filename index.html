@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Projeto educacional sobre visão humana, robótica, acessibilidade visual e inteligência artificial.">
+
+    <title>Os Limites da Visão - Ciência e Tecnologia Assistiva</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div>
+                <h1>Os Limites da Visão</h1>
+                <p class="subtitle">
+                    Ciência, Tecnologia e Acessibilidade Visual
+                </p>
+            </div>
+
+            <button
+                id="toggle-contrast"
+                class="btn-accessible"
+                aria-label="Alternar alto contraste"
+                aria-pressed="false"
+            >
+                🌓 Alto Contraste
+            </button>
+        </div>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <div class="container menu-flex">
+            <a href="#visao" class="nav-link">A Visão Humana</a>
+            <a href="#robotica" class="nav-link">Robótica e Inclusão</a>
+            <a href="#simulador" class="nav-link">Simulador Arduino</a>
+            <a href="#ia" class="nav-link">Inteligência Artificial</a>
+            <a href="#diario" class="nav-link">Diário de Bordo</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- SEÇÃO 1: VISÃO HUMANA -->
+        <section id="visao" class="card">
+            <h2>1. A Visão Humana e Seus Desafios</h2>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i01.jpg"
+                    alt="Ilustração relacionada à visão humana"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 1 — A visão humana e a percepção da luz.
+                </figcaption>
+            </figure>
+
+            <h3>1.1 Como funciona o nosso olho?</h3>
+
+            <p>
+                A visão é um processo complexo. Diferentes estruturas
+                do olho trabalham em conjunto, captando a luz e
+                transformando-a em informações interpretadas pelo cérebro.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Íris e pupila:</strong>
+                    regulam a quantidade de luz que entra no olho.
+                </li>
+                <li>
+                    <strong>Cristalino:</strong>
+                    lente natural que ajusta o foco das imagens na retina.
+                </li>
+                <li>
+                    <strong>Retina:</strong>
+                    transforma a luz em sinais elétricos enviados ao cérebro.
+                </li>
+                <li>
+                    <strong>Fotorreceptores:</strong>
+                    cones e bastonetes responsáveis pela percepção das cores,
+                    dos detalhes e pela visão em baixa luminosidade.
+                </li>
+            </ul>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i02.jpg"
+                    alt="Imagem ilustrativa sobre o funcionamento dos olhos"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 2 — Estruturas e funcionamento da visão.
+                </figcaption>
+            </figure>
+
+            <h3>1.2 O aumento da miopia no mundo</h3>
+
+            <p>
+                A miopia ocorre quando a imagem é focalizada antes da retina.
+                Sua ocorrência está associada a fatores genéticos e
+                ambientais, incluindo atividades prolongadas de perto
+                e pouco tempo ao ar livre durante a infância.
+            </p>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i03.jpg"
+                    alt="Imagem relacionada à miopia e à saúde visual"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 3 — Miopia e desafios da saúde visual.
+                </figcaption>
+            </figure>
+
+            <h3>1.3 Mudanças no estilo de vida: a culpa é das telas?</h3>
+
+            <p>
+                O uso prolongado de dispositivos eletrônicos pode causar
+                cansaço visual e ressecamento. A prevenção também envolve
+                pausas durante atividades de perto, acompanhamento
+                oftalmológico e atividades ao ar livre.
+            </p>
+        </section>
+
+        <!-- SEÇÃO 2: ROBÓTICA -->
+        <section id="robotica" class="card">
+            <h2>2. Robótica e Acessibilidade Visual</h2>
+
+            <p>
+                A acessibilidade visual busca reduzir barreiras de orientação
+                e circulação. Com o Arduino UNO R3, podemos desenvolver
+                protótipos de sinalização inteligente capazes de adaptar
+                cores e intensidades luminosas.
+            </p>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i04.jpg"
+                    alt="Projeto ou montagem de robótica com Arduino"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 4 — Aplicação da robótica na acessibilidade.
+                </figcaption>
+            </figure>
+
+            <div class="grid-2col">
+                <article>
+                    <h3>Projeto 1 — LED RGB</h3>
+
+                    <p>
+                        O LED RGB reúne três emissores de luz:
+                        vermelho (Red), verde (Green) e azul (Blue).
+                        A combinação dessas cores permite criar diferentes
+                        sinalizações luminosas.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Projeto 2 — Fade-In e Fade-Out</h3>
+
+                    <p>
+                        A modulação por largura de pulso (PWM) permite
+                        controlar o brilho do LED gradualmente, produzindo
+                        efeitos de aumento e redução de intensidade.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: SIMULADOR -->
+        <section id="simulador" class="card highlight-box">
+            <h2>3. Laboratório Virtual de Acessibilidade</h2>
+
+            <p>
+                Experimente os controles do simulador de LED RGB
+                inspirados nos projetos desenvolvidos com Arduino.
+            </p>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i05.jpg"
+                    alt="Imagem do circuito ou da simulação de um projeto Arduino"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 5 — Circuito ou simulação do protótipo.
+                </figcaption>
+            </figure>
+
+            <div class="simulator-layout">
+
+                <div class="controls">
+                    <h3>Controle do hardware</h3>
+
+                    <label for="color-picker">
+                        Seletor de cor do LED RGB:
+                    </label>
+
+                    <input
+                        type="color"
+                        id="color-picker"
+                        value="#00ff00"
+                    >
+
+                    <div class="btn-group">
+                        <button id="btn-fade-in" class="btn">
+                            Executar Fade-In
+                        </button>
+
+                        <button id="btn-fade-out" class="btn">
+                            Executar Fade-Out
+                        </button>
+                    </div>
+
+                    <label for="pwm-slider">
+                        Ajuste de brilho PWM:
+                    </label>
+
+                    <input
+                        type="range"
+                        id="pwm-slider"
+                        min="0"
+                        max="255"
+                        value="255"
+                        aria-describedby="pwm-value"
+                    >
+
+                    <output id="pwm-value" for="pwm-slider" aria-live="polite">
+                        Valor PWM: 255 (100%)
+                    </output>
+                </div>
+
+                <div class="hardware-preview">
+                    <h3>Saída do protótipo</h3>
+
+                    <div class="led-container">
+                        <div
+                            id="virtual-led"
+                            class="led"
+                            role="img"
+                            aria-label="LED virtual ligado"
+                        ></div>
+                    </div>
+
+                    <p class="text-center">
+                        LED indicador de fluxo acessível
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: INTELIGÊNCIA ARTIFICIAL -->
+        <section id="ia" class="card">
+            <h2>4. Inteligência Artificial no Desenvolvimento</h2>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i06.jpg"
+                    alt="Imagem relacionada à inteligência artificial e tecnologia"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 6 — Inteligência artificial e desenvolvimento tecnológico.
+                </figcaption>
+            </figure>
+
+            <p>
+                A inteligência artificial generativa pode atuar como
+                ferramenta de apoio técnico na revisão de códigos,
+                na compreensão de circuitos elétricos e na resolução
+                de problemas durante o desenvolvimento de projetos.
+            </p>
+
+            <blockquote class="ai-quote">
+                A inteligência artificial não substitui a experimentação
+                física: ela funciona como ferramenta complementar ao
+                raciocínio, à pesquisa e à validação prática.
+            </blockquote>
+        </section>
+
+        <!-- SEÇÃO 5: DIÁRIO DE BORDO -->
+        <section id="diario" class="card">
+            <h2>5. Diário de Bordo e Documentação Técnica</h2>
+
+            <figure class="image-feature">
+                <img
+                    src="imagens/i07.jpg"
+                    alt="Imagem relacionada à documentação ou montagem final do projeto"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Figura 7 — Documentação e resultados do projeto.
+                </figcaption>
+            </figure>
+
+            <p>
+                Lista de componentes utilizados para a montagem
+                do protótipo em laboratório escolar.
+            </p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Componente</th>
+                            <th>Quantidade</th>
+                            <th>Função no projeto</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Placa Arduino UNO R3</td>
+                            <td>1 unidade</td>
+                            <td>Processamento dos algoritmos de controle.</td>
+                        </tr>
+
+                        <tr>
+                            <td>LED RGB de 5 mm</td>
+                            <td>1 unidade</td>
+                            <td>Emissão de sinalizações luminosas.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Resistores de 220 Ω</td>
+                            <td>3 unidades</td>
+                            <td>Limitação da corrente nos canais do LED.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Potenciômetro linear</td>
+                            <td>1 unidade</td>
+                            <td>Ajuste manual de uma entrada analógica, quando utilizado no circuito.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>
+                <strong>
+                    Projeto Integrador: Inteligência Artificial e Tecnologias
+                    — Robótica, 2ª série.
+                </strong>
+            </p>
+
+            <p>
+                Desenvolvido com propósitos educacionais voltados
+                à inclusão, autonomia e segurança.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
